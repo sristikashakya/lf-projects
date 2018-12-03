@@ -1,0 +1,26 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.clr:before, .clr:after {
+  content: "";
+  display: table;
+}
+.clr:after {
+  clear: both;
+}
+.carousel-container{
+  width: 960px;
+  overflow: hidden;
+}
+#carousel-slide{
+  width: 28800px;
+  height: 500px;
+
+}
+#carousel-slide img{
+  float: left;
+  width: 960px;
+  height: 500px;
+}
+
