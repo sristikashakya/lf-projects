@@ -1,29 +1,7 @@
 var carouselSlide = document.getElementById('carousel-slide');
 var carouselImages =document.getElementsByTagName('img');
-
- var prevButton = document.getElementById('prevButton');
- var nextButton = document.getElementById('nextButton');
-// var counter = 1;
-// var size = carouselImages[0].clientWidth;
-
-//  carouselSlide.style.transform = 'translateX(' + (-size * counter)+'px';
-
-
-
-// nextButton.addEventListener('click',function(){
-//   alert('cc');
-//   carouselSlide.style.transition = "transform 0.4 ease-in-out";
-//   counter++;
-//   carouselSlide.style.transform = 'translateX(' + (-size * counter)+'px';
-//   console.log({size,counter})
-// })
-// prevButton.addEventListener('click',function(){
-//   carouselSlide.style.transition = "transform 0.4 ease-in-out";
-//   counter--;
-//   carouselSlide.style.transform = 'translateX(' + (-size * counter)+'px';
-  
-// })
-var x = 0;
+var prevButton = document.getElementById('prevButton');
+var nextButton = document.getElementById('nextButton');
 var speed = 1 ;
 
 function moveSlide(){

@@ -36,7 +36,6 @@
       //wall collision
       if(this.x + this.radius*2 >= containerWidth || this.x - this.radius*2 <=0 ){
         this.dx = -this.dx;
-        console.log('hi')
       }
       else if( this.y + this.radius*2 >= containerHeight || this.y -this.radius*2<=0){
         this.dy = -this.dy;
@@ -70,10 +69,10 @@
     this.init = function(){
       var container = document.getElementById('container');
       for(i=0;i<10;i++){
-        var randomX = getRandom(0,containerWidth);
-        var randomY = getRandom(0,containerHeight);
-        var dx = direction[Math.floor(Math.random()*2)];
-        var dy = direction[Math.floor(Math.random()*2)];
+        var randomX = getRandom(5,containerWidth-100);
+        var randomY = getRandom(5,containerHeight-100);
+        var dx = direction[Math.floor(Math.random())];
+        var dy = direction[Math.floor(Math.random())];
         var r = getRandom(10,30);
         var box = new Box(randomX,randomY,container,dx,dy,r,i);
         box.createBox();
@@ -83,8 +82,8 @@
     };
     this.move = function(){
       boxes.forEach(function(box,index){
-        box.draw();
         box.update();
+        box.draw();
         box.checkwallCollision();
         box.checkballCollision(boxes,index);
       })
