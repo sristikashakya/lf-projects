@@ -19,3 +19,10 @@
   bottom: 0px;
   left: 270px;
 }
+.my-word{
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
